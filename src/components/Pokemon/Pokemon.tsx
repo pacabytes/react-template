@@ -1,26 +1,9 @@
 import React from 'react';
-import { AttackProps } from './Attack';
 import { AttackList } from './AttackList';
+import { Pokemon as PokemonType } from '../../graphql/hooks';
 
 export interface PokemonProps {
-  pokemon: {
-    name: string;
-    attacks: {
-      fast: AttackProps[];
-      special: AttackProps[];
-    };
-    evolutions: {
-      name: string;
-      weight: {
-        minimum: string;
-        maximum: string;
-      };
-      attacks: {
-        fast: AttackProps[];
-        special: AttackProps[];
-      };
-    }[]
-  }
+  pokemon: PokemonType
 }
 
 export const Pokemon: React.FC<PokemonProps> = ({ pokemon }) => (

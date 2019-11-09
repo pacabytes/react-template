@@ -1,8 +1,9 @@
 import React from 'react';
-import { AttackProps, Attack } from './Attack';
+import { Attack } from './Attack';
+import { Attack as AttackType } from '../../graphql/hooks';
 
 interface AttackListProps {
-  attacks: AttackProps[];
+  attacks: AttackType[];
 }
 
 export const AttackList: React.FC<AttackListProps> = ({ attacks }) => (

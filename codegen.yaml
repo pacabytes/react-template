@@ -1,9 +1,6 @@
 schema: https://graphql-pokemon.now.sh/
 documents: src/**/*.graphql
 generates:
-  ./src/types.d.ts:
-    plugins:
-      - typescript
   ./src/graphql/hooks.tsx:
     plugins:
       - typescript
