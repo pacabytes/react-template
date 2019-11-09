@@ -3,7 +3,11 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 
-const config: webpack.Configuration = {
+type Config = webpack.Configuration & {
+  devServer: any
+}
+
+const config: Config = {
   mode: 'development',
   entry: './src/index.tsx',
   module: {
@@ -23,7 +27,10 @@ const config: webpack.Configuration = {
   plugins: [
     new HtmlWebpackPlugin(),
     new CleanWebpackPlugin()
-  ]
+  ],
+  devServer: {
+    open: true,
+  }
 };
 
 export default config;
