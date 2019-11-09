@@ -14,7 +14,7 @@ export const Pokemon: React.FC<PokemonProps> = ({ pokemon }) => (
     <AttackList attacks={pokemon.attacks.fast} />
     <h2>Special Attacks</h2>
     <AttackList attacks={pokemon.attacks.special} />
-    <h2>Evolutiona</h2>
+    <h2>Evolution</h2>
     <div>
       {pokemon.evolutions.map(evolution => (
         <div key={evolution.name}>
