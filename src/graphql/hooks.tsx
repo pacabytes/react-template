@@ -113,6 +113,7 @@ export const GetPokemonDocument = gql`
     query getPokemon($pokemon: String!) {
   pokemon(name: $pokemon) {
     name
+    image
     attacks {
       fast {
         name

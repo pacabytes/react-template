@@ -1,6 +1,7 @@
 query getPokemon($pokemon: String!){
   pokemon(name: $pokemon) {
     name
+    image
     attacks {
       fast { name type damage }
       special { name type damage }

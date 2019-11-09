@@ -7,7 +7,8 @@ export interface PokemonProps {
 }
 
 export const Pokemon: React.FC<PokemonProps> = ({ pokemon }) => (
-  <div>
+  <div style={{ width: 750, margin: "0 auto" }}>
+    <img style={{ float: "right" }} src={pokemon.image} alt={pokemon.name} />
     <h1>{pokemon.name}</h1>
     <h2>Fast Attacks</h2>
     <AttackList attacks={pokemon.attacks.fast} />
