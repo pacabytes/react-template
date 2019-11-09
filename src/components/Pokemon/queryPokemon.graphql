@@ -1,0 +1,20 @@
+query getPokemon($pokemon: String!){
+  pokemon(name: $pokemon) {
+    name
+    attacks {
+      fast { name type damage }
+      special { name type damage }
+    }
+    evolutions {
+      name
+      weight {
+        minimum
+        maximum
+      }
+      attacks {
+        fast { name type damage }
+        special { name type damage }
+      }
+    }
+  }
+}
