@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/pacabytes/react-template#readme",
   "dependencies": {
-    "react": "^16.11.0"
+    "react": "^16.11.0",
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -26,6 +27,11 @@
     "@babel/preset-react": "^7.7.0",
     "@babel/preset-typescript": "^7.7.2",
     "@types/react": "^16.9.11",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "^6.6.0",
+    "install": "^0.13.0",
+    "npm": "^6.13.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
